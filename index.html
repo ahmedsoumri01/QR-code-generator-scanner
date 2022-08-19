@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR-generator/scanner</title>
+</head>
+<body>
+<div id="div1">
+   <div id="div2">
+        <div>
+            <h1>QR-code generator/scanner</h1> 
+        <input type="text" id="inpt"> <br><button id="btn">generate QR code</button>
+        <br><br><button id="btn2">QR-scanner</button><br>
+        <span id="span"></span>
+        <br>
+        <img src="" id="img1">
+        </div>
+    </div>
+</div>
+<div class="wrapper"  style="display:none;">
+    <form action="#">
+      <input type="file" hidden>
+      <img src="#" alt="qr-code">
+      <div class="content">
+        <i class="fas fa-cloud-upload"></i>
+        <p>Upload QR Code to Read</p>
+      </div>
+    </form>
+    <button id="btn3" >QR-generator</button>
+    <div class="details">
+      <textarea spellcheck="false" disabled></textarea>
+      <div class="buttons">
+        <button class="close">Close</button>
+        <button class="copy">Copy Text</button>
+      </div>
+    </div>
+  </div>
+<script src="script.js"></script>
+</body>
+</html>
